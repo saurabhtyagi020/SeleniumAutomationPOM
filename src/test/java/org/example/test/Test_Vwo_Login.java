@@ -2,14 +2,18 @@ package org.example.test;
 
 import io.qameta.allure.Description;
 import org.example.basetest.CommanToAllTest;
+import org.example.listeners.ScreenShotListnerCOM;
 import org.example.page.DashboardPage;
 import org.example.page.LoginPage;
 import org.example.utils.PropertiesReader;
 import org.testng.Assert;
+import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
+import org.example.listeners.RetryAnalyzer;
 
 import static org.example.driver.DriverManager.getDriver;
 
+@Listeners(ScreenShotListnerCOM.class)
 public class Test_Vwo_Login extends CommanToAllTest {
 
 

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="All Test Suite">
+    <listeners>
+        <listener class-name="org.example.listeners.ScreenShotListnerCOM"></listener>
+        <listener class-name="org.example.listeners.RetryListener"></listener>
+    </listeners>
+    <test verbose="2" preserve-order="true" name="D:/APIAutomation/SeleniumAutomationPOM">
+    
+        <classes>
+            <class name="org.example.test.Test_VWO_Login_DDT">
+            </class>
+        </classes>
+    </test>
+</suite>
