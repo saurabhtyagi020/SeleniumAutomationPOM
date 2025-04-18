@@ -44,4 +44,13 @@ public class DriverManager {
                 System.out.println("Browser not supported!!");
         }
     }
+
+    public static void closeBrowser()
+    {
+        if(driver!=null)
+        {
+            driver.quit();
+            driver=null;
+        }
+    }
 }
