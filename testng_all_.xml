@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="All Test Suite">
+    <test verbose="2" preserve-order="true" name="D:/APIAutomation/SeleniumAutomationPOM">
+        <classes>
+            <class name="org.example.test.Test_VWO_Login_DDT">
+                <methods>
+                    <include name="test_login_with_DDT"/>
+                </methods>
+            </class>
+            <class name="org.example.test.Test_Vwo_Login">
+                <methods>
+                    <include name="test_vwo_login_invalidCred"/>
+                    <include name="test_vwo_login_validCred"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>
